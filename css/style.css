@@ -1,0 +1,382 @@
+:root{
+    --primary:#7f73f1;
+    --secondary:#875ceb;
+    --tertiary:#6e4e9e;
+    --text-color:#fff;
+    --text-secondary:#070705;
+    --text-tertiary:#056394;
+}
+
+*{
+    font-family: 'Gemunu Libre', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Header Evento*/
+.eventoGamer{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(../img/gamer5.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+   height: 85vh;
+    color: var(--text-color);
+}
+
+.descricao h2, 
+.descricao .data-evento{
+    color: var(--secondary);
+}
+
+.descricao h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.descricao .sobre-evento{
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.descricao p{
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+.descricao .data-evento{
+    font-weight: bold;
+}
+
+#inscricao-form{
+    background-color: var(--primary);
+    padding: 2em;
+    max-width: 25%;
+}
+
+#inscricao-form p{
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+#form-grupo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+#form-grupo input{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn{
+    background-color: var(--tertiary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+/*Key atracoes Section*/
+#key-atracoes h2{
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+#atracoes{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.atracao{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+
+.atracao .atracao-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#atracao-1{
+    background-image: url(../img/gamer2.jpg);
+}
+
+#atracao-2{
+    background-image: url(../img/gamer8.jpg);
+}
+
+#atracao-3{
+    background-image: url(../img/gamer6.jpg);
+}
+/*Localização do Evento*/
+#local{
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url(../img/gamer5.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+
+.endereco,
+#localizacao{
+    max-width: 20%;
+}
+
+.endereco i{
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+#endereco-detalhes{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#localizacao h3{
+    color: var(--secondary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#localizacao p{
+    line-height: 1.4em;
+}
+/*Detalhes do Evento*/
+#detalhes{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#detalhe{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+#detalhe img{
+    width: 50%;
+}
+
+#detalhe h3{
+    margin-bottom: 1em;
+    font-size: 4em;
+    font-weight: 500;
+}
+
+.detalhe-1 h3{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.descricao{
+    width: 50%;
+    padding-left: 2em;
+}
+
+.descricao ul{
+    list-style-position: inside;
+}
+
+.descricao ul li{
+    margin-bottom: 0.4em;
+    font-size: 1.5em;
+}
+
+.descricao ul li:last-child{
+    font-weight: bold;
+}
+/*CTA*/
+#cta{
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+    url(../img/gamer6.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+#cta h3{
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#cta .btn{
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+/*footer*/
+#footer{
+    text-align: center;
+    color: var(--secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--text-secondary);
+}
+
+#footer h3{
+    font-size: 3em;
+    margin-bottom: 1.2em;
+}
+
+#footer p:nth-child(2){
+    margin-bottom: 1em;
+    font-size: 1.4em;
+}
+
+#footer span{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/*Mobile*/
+@media (max-width: 450px){
+    .btn{
+        opacity: 1;
+    }
+
+    /*Evento form*/
+    .eventoGamer{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .descricao{
+        padding: 2em;
+    }
+
+    .descricao h2{
+        margin-bottom: .5em;
+    }
+
+    #inscricao-form{
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+    /*Atrações section*/
+    #atracoes{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .atracao{
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+    /*Local Evento*/
+    #local{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    .endereco{
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .endereco i{
+        margin: .3em 0;
+    }
+
+    #localizacao{
+        order: 1;
+        max-width: 100%;
+    }
+
+    #localizacao h3{
+        margin-bottom: 0;
+    }
+
+    #localizacao p{
+        display: none;
+    }
+    /*Detalhes evento*/
+    #detalhe{
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap: 0;
+    }
+
+    #detalhe img{
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .detalhe-1 img{
+        display: none;
+    }
+
+    .descricao{
+        padding: 0;
+    }
+
+    .detalhe-3 img{
+        order: 2;
+    }
+
+    .detalhe-3 .descricao{
+        order: 1;
+    }
+
+    /*CTA*/
+    #cta .btn{
+        width: 80%;
+    }
+
+    #cta{
+        text-align: center;
+    }
+}
+
+
